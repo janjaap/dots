@@ -25,7 +25,6 @@ brew tap homebrew/dupes
 brew install homebrew/dupes/grep
 
 # Install other useful binaries
-brew install graphicsmagick
 brew install webkit2png
 brew install rename
 brew install zopfli
@@ -37,6 +36,9 @@ brew install tree
 brew install ack
 brew install git
 brew install hub
+brew install ansible
+brew install sqlite
+brew install libyaml
 
 # Add osx specific command line tools
 if test ! $(which subl); then
@@ -47,6 +49,9 @@ fi
 if test ! $(which spot); then
   curl -L https://raw.github.com/guille/spot/master/spot.sh -o /usr/local/bin/spot && chmod +x /usr/local/bin/spot
 fi
+
+#install ohmyzsh
+curl -L http://install.ohmyz.sh | sh
 
 # Remove outdated versions from the cellar
 brew cleanup
