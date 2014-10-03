@@ -10,12 +10,9 @@ apps=(
   dropbox
   google-chrome
   qlcolorcode
-  screenflick
-  slack
   transmit
   appcleaner
   firefox
-  hazel
   qlmarkdown
   seil
   spotify
@@ -27,19 +24,18 @@ apps=(
   shiori
   sublime-text3
   virtualbox
-  atom
   flux
-  mailbox
   qlstephen
-  sketch
-  tower
   vlc
-  cloudup
-  font-m-plus
-  nvalt
   quicklook-json
   skype
   transmission
+  phpstorm
+  hipchat
+  harvest
+  scroll-reverser
+  browserstacklocal
+  unrarx
 )
 
 # fonts
@@ -72,7 +68,7 @@ main() {
   brew tap caskroom/versions
 
   # Tap the fonts
-  brew tap caskroom/fonts
+  # brew tap caskroom/fonts
 
   # install apps
   echo "installing apps..."
