@@ -156,6 +156,10 @@ alias gl="git log --pretty='format:%Cgreen%h%Creset %an - %s' --graph"
 alias gpom="git pull origin master"
 alias gcd='cd "`git rev-parse --show-toplevel`"'
 
+git config --global alias.ci commit
+git config --global alias.co checkout
+git config --global alias.up "!git remote update -p; git merge --ff-only @{u}"
+
 ## Get the process on a given port
 function port() {
   lsof -i ":${1:-80}"

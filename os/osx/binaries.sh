@@ -50,8 +50,10 @@ if test ! $(which spot); then
   curl -L https://raw.github.com/guille/spot/master/spot.sh -o /usr/local/bin/spot && chmod +x /usr/local/bin/spot
 fi
 
-#install ohmyzsh
+# Install ohmyzsh
 curl -L http://install.ohmyz.sh | sh
+cat $lib/zsh/.zshrc >> ~/.zshrc
+chsh -s /bin/zsh
 
 # Remove outdated versions from the cellar
 brew cleanup
